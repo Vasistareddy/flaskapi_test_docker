@@ -1,5 +1,5 @@
 # flaskapi_test_docker
-The purpose of this project is for someone who needs an <b>test API</b> for some other applications.
+The purpose of this project is to serve someone who needs an <b>test API</b> to work with some other applications.
 
 Ex: To work with API Gateways, one needs an test API to checkout Gateways(KONG API Gateway) features like Authentication, ratelimiting, logging, analysis, etc.,
 
@@ -9,12 +9,12 @@ Ex: To work with API Gateways, one needs an test API to checkout Gateways(KONG A
 docker build . -t flask:test
 
 
-#Run the docker
+# Run the docker
 
 docker run -p 5055:5055 -d flask:test
 
 
-#endpoints
+# endpoints
 
 /api/v1/test1
 
