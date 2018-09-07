@@ -1,2 +1,25 @@
 # flaskapi_test_docker
-Flask docker project who needs an API to test. This project helps me to test kong api gateway on the api generated.
+The purpose of this project is for someone who needs an <b>test API</b> for some other applications.
+
+Ex: To work with API Gateways, one needs an test API to checkout Gateways(KONG API Gateway) features like Authentication, ratelimiting, logging, analysis, etc.,
+
+
+# Build the docker
+
+docker build . -t flask:test
+
+
+#Run the docker
+
+docker run -p 5055:5055 -d flask:test
+
+
+#endpoints
+
+/api/v1/test1
+
+
+/api/v1/test2
+
+
+Ex: http://127.0.0.1/api/v1/test1
